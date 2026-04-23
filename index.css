@@ -91,7 +91,7 @@ body {
     transform: scale(1.1);
 }
 
-/* FIXED: merged your two .hero blocks into one so it stops getting cut */
+
 .hero {
     min-height: 500px;
     background: url("images/hero.jpg") center/cover no-repeat;
@@ -302,6 +302,21 @@ button:hover {
     background-color: #e6e1e1;
     gap: 30px;
     align-items: center;
+}
+.kizomba-section .image-box {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.kizomba-section .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.kizomba-section .image-box:hover img {
+    transform: scale(1.05);
 }
 @media (max-width: 768px) {
     .kizomba-section {
