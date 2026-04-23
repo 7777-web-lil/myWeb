@@ -1,3 +1,11 @@
+function changeTheme() {
+    let body = document.querySelector("body");
+    body.classList.toggle("dark");
+}
+
+let button = document.querySelector(".theme-button");
+
+button.addEventListener("click", changeTheme);
 let heroTitle = document.querySelector(".typing-text");
 let text = "Welcome,get more organized";
 let index = 0;

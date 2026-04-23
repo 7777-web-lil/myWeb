@@ -90,7 +90,11 @@ body {
     background: #d7b584;
     transform: scale(1.1);
 }
-
+@media (max-width: 768px) {
+    .social-icons {
+        display: none;
+    }
+}
 
 .hero {
     min-height: 500px;
@@ -519,7 +523,30 @@ footer {
     font-style: italic;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.15);
 }
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
 
+.footer-socials a {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f4f1;
+    color: #c66464;
+    border-radius: 50%;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+.footer-socials a:hover {
+    background-color: #d7b584;
+    color: white;
+    transform: translateY(-3px);
+}
 .dark {
     background-color: black;
     color: white;
@@ -550,6 +577,62 @@ footer {
 .dark button {
     background-color: black;
     color: white;
+}
+.dark .kizomba-section {
+    background-color: #2a1f1f;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.dark .testimonial-card {
+    background: #3a2a2a;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.dark .section-title {
+    color: #f1cfcf;
+}
+
+.dark .project-link {
+    background-color: #3a2a2a;
+    color: #f1cfcf;
+}
+
+.dark .project-link:hover {
+    background-color: #d7b584;
+    color: black;
+}
+
+.dark .github-link {
+    color: #f1cfcf;
+}
+
+.dark .github-link:hover {
+    color: #d7b584;
+}
+
+.dark .github-note {
+    color: white;
+}
+
+.dark .tools span {
+    background: #3a2a2a;
+    color: #f1cfcf;
+}
+
+.dark .tools span:hover {
+    background: #d7b584;
+    color: black;
+}
+
+.dark .footer-socials a {
+    background-color: #3a2a2a;
+    color: #f1cfcf;
+}
+
+.dark .footer-socials a:hover {
+    background-color: #d7b584;
+    color: black;
 }
 
 @media (max-width: 768px) {
@@ -632,4 +715,82 @@ footer {
     background: rgba(0,0,0,0.1);
     margin: 0;
     color: #c98b8b;
+}
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: #f7f3ed;
+    color: #bd84c3;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #c9a9a9;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.github-note {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.github-link {
+    color: #c98b8b;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.github-link:hover {
+    color: #b88efc;
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .project-links {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+.tools {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.tools span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    background: #f7f3ed;
+    color: #8e6e6e;
+
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.tools span i {
+    font-size: 13px;
+}
+
+.tools span:hover {
+    background: #d7b584;
+    color: white;
 }
