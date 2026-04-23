@@ -50,7 +50,7 @@
                 I combine virtual assistance and development,
                 help your business run more smoothly and efficiently.
             </p>
-            <button><a href="#booking" class="learn">Book</a></button>
+            <button  id="book-btn" type="button">Book</button>
         </div>
     </section>
 
@@ -92,8 +92,7 @@
         </div>
     </div>
 
-
-    <h2 class="section-title">Tech $ VA</h2>
+    <h2 class="section-title">Tech & VA</h2>
     <div class="kizomba-section">
 
         <div class="image-box">
@@ -144,11 +143,11 @@
     </div>
     <h2 id="booking" class="section-title">Work With Me</h2>
 
-    <form class="booking-form">
-        <input type="text" placeholder="Your name" required>
-        <input type="email" placeholder="Your email" required>
+    <form class="booking-form" id="contact-form">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email"  placeholder="Your email" required>
 
-        <textarea placeholder="Tell me a little about what you need help with"></textarea>
+        <textarea name="message" placeholder="Tell me a little about what you need help with"></textarea>
 
         <button type="submit">Send Message</button>
     </form>
@@ -190,6 +189,7 @@
     <a href="https://lilis" target="_blank">LilianTech</a>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 <script src="index.js">
 </script>
