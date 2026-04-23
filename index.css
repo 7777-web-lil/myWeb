@@ -551,6 +551,10 @@ footer {
     background-color: black;
     color: white;
 }
+body.dark {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+    url("images/try3.png") center/cover no-repeat;
+}
 
 .dark .navbar {
     background: rgba(0, 0, 0, 0.92);
@@ -633,6 +637,28 @@ footer {
 .dark .footer-socials a:hover {
     background-color: #d7b584;
     color: black;
+}
+.dark .offers {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.dark .offer-card {
+    background-color: #3a2a2a;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.dark .offer-card h3,
+.dark .offer-card p {
+    color: #f1cfcf;
+}
+
+.dark .offer-card i {
+    color: #d7b584;
+}
+
+.dark .offer-card:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
 }
 
 @media (max-width: 768px) {
