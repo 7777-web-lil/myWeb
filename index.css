@@ -370,9 +370,13 @@ p {
 
 .testimonial-card {
     background: #f8f4f1;
-    padding: 5px;
+    padding: 20px;
+    margin: 20px;
     border-radius: 10px;
     box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+}
+.testimonial-card h4{
+    margin-bottom: 20px;
 }
 
 .profile {
