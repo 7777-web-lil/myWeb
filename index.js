@@ -7,7 +7,7 @@ let button = document.querySelector(".theme-button");
 
 button.addEventListener("click", changeTheme);
 let heroTitle = document.querySelector(".typing-text");
-let text = "Welcome,get more organized";
+let text = "Simple Systems, Stay Organised";
 let index = 0;
 
 function typeEffect() {

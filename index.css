@@ -198,7 +198,8 @@ button:hover {
 .container {
     max-width: 1000px;
     margin: 40px auto;
-    background-color: #ffffff;
+    /*background-color: #fffcfc;*/
+    background-color: #f5f5f5;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
@@ -215,7 +216,8 @@ button:hover {
 
 .offer-card {
     /*background: #f8f4f1;*/
-    background-color: white;
+    /*background-color: white;*/
+    background-color: rgba(255, 192, 203, 0.08);
     border: none;
     padding: 20px 15px;
     border-radius: 16px;
@@ -250,6 +252,7 @@ button:hover {
     .offers {
         grid-template-columns: 1fr;
     }
+
 }
 
 .structure {
@@ -537,7 +540,7 @@ footer {
     align-items: center;
     justify-content: center;
     background-color: #f8f4f1;
-    color: #c66464;
+    color: #dc9c9c;
     border-radius: 50%;
     font-size: 16px;
     transition: all 0.3s ease;
